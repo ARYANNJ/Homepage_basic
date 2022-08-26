@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.header{
+    background-image: url(BG2.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 60px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.navbar-links{
+    flex: 1;
+    text-align: right;
+}
+.navbar-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position:relative
+    
+}
+
+.navbar-links ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar-links ul li :hover{
+    color: black;
+    transition: 0.5s;;
+}
+.content{
+    width: 90%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    
+    font-size:  80px; ;
+}
+.content p{
+    margin:20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.button-new{
+    background-color:transparent;
+    height: 40px;
+    width: 80px;
+    margin-left: 30px;
+    cursor: pointer;
+    font-family: sans-serif;
+    position:relative
+}
+.button-new:hover{
+    color: white;
+    background-color: black;
+    transition: 1s;;
+    
+}
+
+nav.fa{
+    display: none;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .content h1{
+        font-size:  80px; ;
+    }
+    .navbar-links ul li{
+     display: block;      
+        }
+        .navbar-links{
+            position: absolute;
+            background: #f44336;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: 0px;
+            text-align: left;
+            z-index: 2;
+        }
+        nav .fa{
+            display: block;
+            color:#fff;
+            margin:10px;
+            font-size: 22px;
+            cursor:pointer;
+        }
+    
+    }
